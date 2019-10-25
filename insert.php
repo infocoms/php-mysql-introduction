@@ -64,36 +64,35 @@ if (isset($_POST['nameF'], $_POST['nameL'], $_POST['userN'], $_POST['gen'], $_PO
 </head>
 <body>
 <div class="container">
-<form method="post">
-    <div class="form-group">
-    <input name="nameF" class="form-control" placeholder="First Name" required><br>
-    </div>
-    <input name="nameL" placeholder="Last Name" required><br>
-    <input name="userN" placeholder="Username" required><br>
-    <select name="gen">
-        <option value="Male" selected>Male</option>
-        <option value="Female">Female</option>
-    </select><br>
-    <input type="email" placeholder="Email" name="email" required><br>
-    <input name="linked" placeholder="Linkedin link" required><br>
-    <input name="gitz" placeholder="Github link" required><br>
-    <select name="lang">
-        <option value="English" selected>English</option>
-        <option value="French">French</option>
-        <option value="Italian">Italian</option>
-        <option value="Turkish">Turkish</option>
-        <option value="Spanish">Spanish</option>
-        <option value="Chinese">Chinese</option>
-        <option value="Arabic">Arabic</option>
-    </select><br>
-    <input name="avatar" placeholder="Avatar link" required><br>
-    <input name="video" placeholder="Video link" required><br>
-    <input name="quote" placeholder="Quote" required><br>
-    <input name="guoteaut" placeholder="Quote author" required><br>
-    <input name="date" type="datetime-local" required><br>
-    <button type="submit" name="submit" class="btn btn-primary">post</button>
-    <a class="btn btn-outline-primary" href="index.php" role="button">SHOW USERS</a>
-</form>
+    <h1 class="jumbotron-heading">User Registration</h1>
+    <form method="post">
+        <input name="nameF" class="form-control mb-1" placeholder="First Name" required>
+        <input name="nameL" class="form-control mb-1" placeholder="Last Name" required>
+        <input name="userN" class="form-control mb-1" placeholder="Username" required>
+        <select class="form-control mb-1" name="gen">
+            <option value="Male" selected>Male</option>
+            <option value="Female">Female</option>
+        </select>
+        <input class="form-control mb-1" type="email" placeholder="Email" name="email" required>
+        <input class="form-control mb-1" name="linked" placeholder="Linkedin link" required>
+        <input class="form-control mb-1" name="gitz" placeholder="Github link" required>
+        <select class="form-control mb-1" name="lang">
+            <option value="English" selected>English</option>
+            <option value="French">French</option>
+            <option value="Italian">Italian</option>
+            <option value="Turkish">Turkish</option>
+            <option value="Spanish">Spanish</option>
+            <option value="Chinese">Chinese</option>
+            <option value="Arabic">Arabic</option>
+        </select>
+        <input class="form-control mb-1" name="avatar" placeholder="Avatar link" required>
+        <input class="form-control mb-1" name="video" placeholder="Video link" required>
+        <input class="form-control mb-1" name="quote" placeholder="Quote" required>
+        <input class="form-control mb-1" name="guoteaut" placeholder="Quote author" required>
+        <input class="form-control mb-3" name="date" type="datetime-local" required>
+        <button type="submit" name="submit" class="btn btn-primary">POST</button>
+        <a class="btn btn-outline-primary" href="index.php" role="button">SHOW USERS</a>
+    </form>
 </div>
 </body>
 </html>

@@ -55,16 +55,24 @@ if (isset($_POST['nameF'], $_POST['nameL'], $_POST['userN'], $_POST['gen'], $_PO
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <title>Insert User</title>
 </head>
 <body>
+<div class="container">
 <form method="post">
-    <input name="nameF" placeholder="First Name" required><br>
+    <div class="form-group">
+    <input name="nameF" class="form-control" placeholder="First Name" required><br>
+    </div>
     <input name="nameL" placeholder="Last Name" required><br>
     <input name="userN" placeholder="Username" required><br>
     <select name="gen">
         <option value="Male" selected>Male</option>
-        <option value="Female" >Female</option>
+        <option value="Female">Female</option>
     </select><br>
     <input type="email" placeholder="Email" name="email" required><br>
     <input name="linked" placeholder="Linkedin link" required><br>
@@ -83,7 +91,9 @@ if (isset($_POST['nameF'], $_POST['nameL'], $_POST['userN'], $_POST['gen'], $_PO
     <input name="quote" placeholder="Quote" required><br>
     <input name="guoteaut" placeholder="Quote author" required><br>
     <input name="date" type="datetime-local" required><br>
-    <button type="submit" name="submit">post</button>
+    <button type="submit" name="submit" class="btn btn-primary">post</button>
+    <a class="btn btn-outline-primary" href="index.php" role="button">SHOW USERS</a>
 </form>
+</div>
 </body>
 </html>

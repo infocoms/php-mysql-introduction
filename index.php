@@ -18,21 +18,22 @@ require "connection.php";
 $sql = openConnection()->query('SELECT * FROM student ')->fetchAll();
 
 
+
+
+//profile.php?user=$user_id
+
 foreach ($sql as $ticket) {
+    $user_id = $ticket['Id'];
     echo
     "
     <tbody>
-    <tr>
     <td>{$ticket['first_name']}</td>
     <td>{$ticket['last_name']}</td>
     <td>{$ticket['email']}</td>
     <td>{$ticket['preferred_language']}</td>
-    <td>{$ticket['Id']}</td>
-    
+    <td><a href=\"profile.php?user=$user_id\">Profile</a></td>
    </tr>\n </tbody>";
-
 }
-
 ?>
         <!doctype html>
         <html lang="en">

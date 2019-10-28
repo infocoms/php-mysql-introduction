@@ -77,13 +77,13 @@ if (isset($_POST['nameF'], $_POST['nameL'], $_POST['userN'], $_POST['gen'], $_PO
         <input class="form-control mb-1" name="linked" placeholder="Linkedin link" required>
         <input class="form-control mb-1" name="gitz" placeholder="Github link" required>
         <select class="form-control mb-1" name="lang">
-            <option value="English" selected>English</option>
-            <option value="French">French</option>
-            <option value="Italian">Italian</option>
-            <option value="Turkish">Turkish</option>
-            <option value="Spanish">Spanish</option>
-            <option value="Chinese">Chinese</option>
-            <option value="Arabic">Arabic</option>
+            <option value="&#127482;&#127474;🇺🇸🇺🇸🇺🇸">English</option>
+            <option value="&#127467;&#127479;">French</option>
+            <option value="&#127470;&#127481;">Italian</option>
+            <option value="&#127481;&#127479;">Turkish</option>
+            <option value="&#127466;&#127480;">Spanish</option>
+            <option value="&#127464;&#127475;">Chinese</option>
+            <option value="&#127480;&#127462;">Arabic</option>
         </select>
         <input class="form-control mb-1" name="avatar" placeholder="Avatar link" required>
         <input class="form-control mb-1" name="video" placeholder="Video link" required>
